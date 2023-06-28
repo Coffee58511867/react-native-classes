@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text, Button } from "react-native";
 import { globalStyles } from "../styles/global";
 
-export default class HomeScreen extends Component {
+export default class DashboardScreen extends Component {
     render() {
       return (
         <View style={globalStyles.container}>
