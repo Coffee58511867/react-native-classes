@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import { TextInput, View } from "react-native";
 import { globalStyles } from "../styles/global";
 
-export default function CustomInput({ placeholder, value, onChangeText, keyboardType}){
+export default class CustomInput extends Component{ 
+    render(){
+    const { placeholder, value, onChangeText, keyboardType} = this.props;
     return(
         <View>
             <TextInput style={globalStyles.input} 
@@ -12,5 +14,6 @@ export default function CustomInput({ placeholder, value, onChangeText, keyboard
             keyboardType={keyboardType}     
             />
         </View>
-    )
+    );
+    };
 }

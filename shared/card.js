@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View } from 'react-native';
 import { globalStyles } from '../styles/global';
 
-export default function Card(props) {
+export default class Card extends Component{
+
+  render(){
+    
   return (
     <View style={globalStyles.card}>
       <View style={globalStyles.cardContent}>
@@ -10,4 +13,5 @@ export default function Card(props) {
       </View>
     </View>
   );
-}
+  };
+};

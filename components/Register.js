@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { View, Text, TextInput } from "react-native";
 import { globalStyles } from "../styles/global";
 import CustomButton from "../shared/button";
+import CustomInput from "../shared/CustomInput";
 
 export default class Register extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ export default class Register extends Component {
           value={phone}
           onChangeText={value => this.setState({ phone: value })}
         />
-        <TextInput
+        <CustomInput
           style={globalStyles.input}
           placeholder="Password"
           value={password}
