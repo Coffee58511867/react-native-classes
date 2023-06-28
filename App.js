@@ -12,7 +12,16 @@ export default class App extends Component {
 
     return (
       <NavigationContainer>
-        <Stack.Navigator   initialRouteName="Home">
+        <Stack.Navigator   initialRouteName="Home"        screenOptions={{
+          headerStyle: {
+            backgroundColor: "#0080ff",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+          headerTitleAlign: "center",
+        }}> 
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Register" component={Register} />
         </Stack.Navigator>
